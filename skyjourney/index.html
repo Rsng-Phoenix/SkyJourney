@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyJourney - Book Flights Across India</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <nav class="nav-container">
+        <div class="logo fade-in">
+            <h1><i class="fas fa-plane-departure"></i> SkyJourney</h1>
+        </div>
+        <ul class="nav-links slide-in-right">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="#">Flights</a></li>
+            <li><a href="#">Offers</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="auth-buttons slide-in-left">
+            <a href="#" class="btn-login"><i class="fas fa-sign-in-alt"></i> Login</a>
+            <a href="#" class="btn-signup"><i class="fas fa-user-plus"></i> Sign Up</a>
+        </div>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content fade-in-up">
+        <h1>Explore India with Ease</h1>
+        <p>Find the best flight deals across Indian cities</p>
+        <div class="hero-badges">
+            <span class="badge"><i class="fas fa-tag"></i> Best Prices</span>
+            <span class="badge"><i class="fas fa-shield-alt"></i> Secure Booking</span>
+            <span class="badge"><i class="fas fa-headset"></i> 24/7 Support</span>
+        </div>
+    </div>
+</section>
+
+<section class="search-container">
+    <div class="search-box bounce-in">
+        <h2><i class="fas fa-search"></i> Search Flights</h2>
+        <form id="flightSearchForm" action="search_flights.php" method="POST">
+            <div class="form-group">
+                <label>Trip Type</label>
+                <div class="radio-group">
+                    <input type="radio" id="one-way" name="trip_type" value="one-way" checked>
+                    <label for="one-way" class="radio-label"><i class="fas fa-long-arrow-alt-right"></i> One Way</label>
+                    <input type="radio" id="round-trip" name="trip_type" value="round-trip">
+                    <label for="round-trip" class="radio-label"><i class="fas fa-exchange-alt"></i> Round Trip</label>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="from"><i class="fas fa-plane-departure"></i> From</label>
+                    <input type="text" id="from" name="from" placeholder="Departure City" autocomplete="off" class="input-animate">
+                    <div id="fromCityDropdown" class="dropdown-content"></div>
+                </div>
+
+                <div class="swap-cities-btn">
+                    <i class="fas fa-exchange-alt"></i>
+                </div>
+
+                <div class="form-group">
+                    <label for="to"><i class="fas fa-plane-arrival"></i> To</label>
+                    <input type="text" id="to" name="to" placeholder="Arrival City" autocomplete="off" class="input-animate">
+                    <div id="toCityDropdown" class="dropdown-content"></div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="departure-date"><i class="fas fa-calendar-alt"></i> Departure Date</label>
+                    <input type="date" id="departure-date" name="departure_date" required class="input-animate">
+                </div>
+
+                <div class="form-group" id="return-date-group">
+                    <label for="return-date"><i class="fas fa-calendar-alt"></i> Return Date</label>
+                    <input type="date" id="return-date" name="return_date" disabled class="input-animate">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="passengers"><i class="fas fa-users"></i> Passengers</label>
+                    <select id="passengers" name="passengers" class="input-animate">
+                        <option value="1">1 Adult</option>
+                        <option value="2">2 Adults</option>
+                        <option value="3">3 Adults</option>
+                        <option value="4">4 Adults</option>
+                        <option value="5">5 Adults</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="class"><i class="fas fa-chair"></i> Class</label>
+                    <select id="class" name="class" class="input-animate">
+                        <option value="economy">Economy</option>
+                        <option value="premium_economy">Premium Economy</option>
+                        <option value="business">Business</option>
+                        <option value="first">First Class</option>
+                    </select>
+                </div>
+            </div>
+
+            <button type="submit" class="search-btn pulse"><i class="fas fa-search"></i> Search Flights</button>
+        </form>
+    </div>
+</section>
+
+<section class="features-section" style="margin-left: 20px;"></section>
+    <div class="feature-container">
+        <div class="feature-card slide-in-right">
+            <i class="fas fa-globe feature-icon"></i>
+            <h3>Domestic Destinations</h3>
+            <p>Connect to over 100 cities across India</p>
+        </div>
+        <div class="feature-card slide-in-right" style="animation-delay: 0.2s;">
+            <i class="fas fa-rupee-sign feature-icon"></i>
+            <h3>Best Price Guarantee</h3>
+            <p>Get the best deals on your flight bookings</p>
+        </div>
+        <div class="feature-card slide-in-right" style="animation-delay: 0.4s;"></div>
+            <i class="fas fa-headset feature-icon"></i>
+            <h3>24/7 Support</h3>
+            <p>Our team is always ready to assist you</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-column fade-in">
+            <h3><i class="fas fa-plane-departure"></i> SkyJourney</h3>
+            <p>Your trusted partner for flights across India.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="footer-column fade-in" style="animation-delay: 0.2s;">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#"><i class="fas fa-chevron-right"></i> Home</a></li>
+                <li><a href="#"><i class="fas fa-chevron-right"></i> Flights</a></li>
+                <li><a href="#"><i class="fas fa-chevron-right"></i> Offers</a></li>
+                <li><a href="#"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                <li><a href="#"><i class="fas fa-chevron-right"></i> Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-column fade-in" style="animation-delay: 0.4s;">
+            <h3>Contact Us</h3>
+            <p><i class="fas fa-map-marker-alt"></i> 456 Kothnur, Bengaluru</p>
+            <p><i class="fas fa-phone"></i> +91 825285XXXX</p>
+            <p><i class="fas fa-envelope"></i> info@skyjourney.com</p>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2025 SkyJourney. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+<script>
+    // Add swap cities functionality
+    document.querySelector('.swap-cities-btn').addEventListener('click', function() {
+        const fromValue = document.getElementById('from').value;
+        const toValue = document.getElementById('to').value;
+        document.getElementById('from').value = toValue;
+        document.getElementById('to').value = fromValue;
+    });
+</script>
+
+</body>
+</html>
