@@ -20,7 +20,7 @@
 
 
 
-** Features**
+**Features**
 
     ✅ Indian cities & airports
 
@@ -46,7 +46,7 @@
 
 
 
-** How to Run This Project**
+**How to Run This Project**
 
     📦 Prerequisites:
   
@@ -56,7 +56,7 @@
 
 
 
-** Steps to Execute:**
+**Steps to Execute:**
 
 1.Clone or Download this repository
 
