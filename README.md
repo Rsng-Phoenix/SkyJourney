@@ -58,7 +58,7 @@
 
 **Steps to Execute:**
 
-1.Clone or Download this repository
+1. Clone or Download this repository
 
         skyjourney/
         
