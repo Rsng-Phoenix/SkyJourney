@@ -87,16 +87,16 @@
 
 3. Import the database
 
-4. Open phpMyAdmin
+         I.  Open phpMyAdmin
 
-       http://localhost/phpmyadmin
+                http://localhost/phpmyadmin
 
-6. Create a new database named skyjourney
+        II.  Create a new database named skyjourney
 
-7. Import the SQL file:
+        III. Import the SQL file:
    
-       path : skyjourney/db/database-schema.sql
+               path : skyjourney/db/database-schema.sql
 
-8. Start Apache and MySQL via XAMPP
+5. Start Apache and MySQL via XAMPP
 
         Visit the site : http://localhost/skyjourney/
