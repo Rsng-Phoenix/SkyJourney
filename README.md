@@ -16,11 +16,11 @@
 
     PDF ticket generation with logo, QR, payment summary, and masked card info
 
-    📄 Built using HTML, CSS, JS, PHP, MySQL, FPDF — ideal for learning full-stack basics.
+    Built using HTML, CSS, JS, PHP, MySQL, FPDF — ideal for learning full-stack basics.
 
 
 
-**🧰 Features**
+** Features**
 
     ✅ Indian cities & airports
 
@@ -34,19 +34,19 @@
 
     ✅ PDF generation with:
 
-            i.   ✈️ Passenger info
+            i.  Passenger info
     
-           ii.  💳 Masked payment summary
+           ii.  Masked payment summary
 
-          iii. 🧾 Fake transaction ID & timestamp
+          iii. Fake transaction ID & timestamp
 
-           iv. 📎 Logo and QR
+           iv. Logo and QR
 
     ✅ Simple database schema included
 
 
 
-**🚀 How to Run This Project**
+** How to Run This Project**
 
     📦 Prerequisites:
   
@@ -56,7 +56,7 @@
 
 
 
-**🧪 Steps to Execute:**
+** Steps to Execute:**
 
 1.Clone or Download this repository
 
