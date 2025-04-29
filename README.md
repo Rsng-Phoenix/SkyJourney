@@ -48,7 +48,7 @@
 
 **How to Run This Project**
 
-    📦 Prerequisites:
+    Prerequisites:
   
     XAMPP installed (or any Apache + PHP server)
 
@@ -97,5 +97,6 @@
    
        path : skyjourney/db/database-schema.sql
 
-7.Start Apache and MySQL via XAMPP
-    Visit the site : http://localhost/skyjourney/
+8. Start Apache and MySQL via XAMPP
+
+        Visit the site : http://localhost/skyjourney/
